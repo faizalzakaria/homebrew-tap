@@ -2,16 +2,16 @@
 class Octo < Formula
   desc "Toolbelt for your AWS ASGs"
   homepage "http://github.com/faizalzakaria"
-  version "1.0.3"
+  version "1.0.4"
   bottle :unneeded
 
   if OS.mac?
-    url "http://github.com/faizalzakaria/octo/releases/download/v1.0.3/octo_1.0.3_Darwin_x86_64.tar.gz"
-    sha256 "74bd390c0609bf57225c10634f085fe986d79468089b00cd33ac25b8fc3e3c04"
+    url "http://github.com/faizalzakaria/octo/releases/download/v1.0.4/octo_1.0.4_Darwin_x86_64.tar.gz"
+    sha256 "3cb78005bf91241c3979cfddd95b4e37883de7f7b5a2ba697f0bca97191ef86b"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.3/octo_1.0.3_Linux_x86_64.tar.gz"
-      sha256 "09318c040b382b30f689a70bba77330abf09676e336a35d18b4629fa88c469e1"
+      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.4/octo_1.0.4_Linux_x86_64.tar.gz"
+      sha256 "2f3da680501367ebdcd7627aa47870a837042e39aa772bf204800ac19c73c6b3"
     end
   end
   
