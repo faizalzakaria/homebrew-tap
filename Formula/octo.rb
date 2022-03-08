@@ -3,7 +3,6 @@ class Octo < Formula
   desc "Toolbelt for your AWS ASGs"
   homepage "http://github.com/faizalzakaria"
   version "1.0.5"
-  bottle :unneeded
 
   if OS.mac?
     url "http://github.com/faizalzakaria/octo/releases/download/v1.0.5/octo_1.0.5_Darwin_x86_64.tar.gz"
@@ -14,7 +13,7 @@ class Octo < Formula
       sha256 "07075773da42d8a101fc661703a3ff3766d30fe665f83d9ec6a64c7c62792b45"
     end
   end
-  
+
   depends_on "git"
 
   def install
