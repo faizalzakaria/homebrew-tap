@@ -5,22 +5,22 @@
 class Octo < Formula
   desc "Toolbelt for your AWS ASGs"
   homepage "http://github.com/faizalzakaria"
-  version "1.0.7"
+  version "1.0.8"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.7/octo_1.0.7_Darwin_arm64.tar.gz"
-      sha256 "b30c7f7ba739718cf271d8b09ebe70e2ccf5dfdca9e3adfa8889163ec165dc5b"
+      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.8/octo_1.0.8_Darwin_arm64.tar.gz"
+      sha256 "6bf7234bd5eaf402ab48b10abc5d65efb539c563310402ae36661c3804f8f114"
 
       def install
         bin.install "octo"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.7/octo_1.0.7_Darwin_x86_64.tar.gz"
-      sha256 "d9761e839b73ffd881fbd748f2d291223cc63abff57d2ff5c1678ec2c0729332"
+      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.8/octo_1.0.8_Darwin_x86_64.tar.gz"
+      sha256 "17b39a356556d679dcad9d6cb20d974f11b0ceb0f80a59b3416df8fed432f622"
 
       def install
         bin.install "octo"
@@ -30,16 +30,16 @@ class Octo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.7/octo_1.0.7_Linux_arm64.tar.gz"
-      sha256 "8d7e08da8d50c673d59a0924323435994f8c374ca600d19cb4fefc2613b63770"
+      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.8/octo_1.0.8_Linux_arm64.tar.gz"
+      sha256 "cf9091962d0993905ec55fc177fb9bb3373b4a72f7060c60c9550a7c4473b678"
 
       def install
         bin.install "octo"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.7/octo_1.0.7_Linux_x86_64.tar.gz"
-      sha256 "289b1ada58c160ce8c684046938a656781cfa1b1fbfcfd3e254a3750b8615719"
+      url "http://github.com/faizalzakaria/octo/releases/download/v1.0.8/octo_1.0.8_Linux_x86_64.tar.gz"
+      sha256 "a7866c9003e1fcd153a6a78ba92f42a3dbb892f6c28f68e21d9b6798e08ada10"
 
       def install
         bin.install "octo"
